@@ -25,7 +25,6 @@ body {
   overflow-x: hidden !important;
   overflow-y: scroll;
 }
-
 .candyshop {
   width: 100%;
   overflow: hidden;
@@ -43,6 +42,14 @@ input, textarea, select {
   margin: 0;
   border: none;
 }
+
+
+
+
+
+
+
+
 
 .headerblock {
   width: 100%;
