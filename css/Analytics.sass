@@ -30,15 +30,36 @@ body
   position: relative
   z-index: 1
 
-.header
-  width: 100%
+// .header
+//   width: 100%
+
+.menu-text-img
+  // max-width: 1220px
+  display: flex
+  margin-top: 50px
+  margin-left: 190px
+  // margin: 50px auto
+  margin-bottom: 96px
+  gap: 74px
+  flex-direction: column
   // background-color: rgb(138, 76, 76)
+
+.fon1
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  width: 100%
+  max-height: 103vh
+  object-fit: cover
 
 .menu
   max-width: 1220px
-  margin: 50px auto
+  width: 100%
+  // margin: 50px auto
   display: flex
   box-sizing: border-box
+  padding: 0px 20px
   justify-content: space-between
 
   // background-color: rgb(11, 211, 230)
@@ -48,6 +69,9 @@ body
   gap: 80px
 
   // background-color: rgb(195, 169, 0)
+
+.logoSVG
+  max-height: 40px
 
 .menuBUTTONS
   display: flex
@@ -89,39 +113,23 @@ body
     border: 1px solid #465B95
     border-radius: 68px
 
-.fon1
-  position: absolute
-  top: 0
-  left: 0
-  z-index: -1
-  width: 100%
-  height: auto
-  display: block
-  object-fit: cover
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 .analytics-text-and-img
+  display: flex
+  gap: 149px
+  box-sizing: border-box
+  padding-left: 20px
+  align-items: center
+
+  // background-color: rgb(96, 5, 242)
 
 .analytics-text
   max-width: 550px
   max-height: 316px
-  margin: 0px auto
   display: flex
   flex-direction: column
   gap: 50px
 
-  background-color: rgb(25, 107, 71)
+  // background-color: rgb(203, 189, 26)
 
   p
     font-family: 'Roboto'
@@ -140,9 +148,12 @@ body
     border-radius: 68px
 
 .text
+  display: flex
+  flex-direction: column
   gap: 15px
+  // background-color: #EF2A82
 
-.text-1
+.an-text-1
   font-family: 'Roboto'
   font-style: normal
   font-weight: 700
@@ -150,10 +161,115 @@ body
   line-height: 120%
   color: #FFFFFF
 
-.text-2
+.an-text-2
   font-family: 'Roboto'
   font-style: normal
   font-weight: 400
   font-size: 18px
   line-height: 150%
   color: #8794BA
+
+.GrafIMG
+  position: relative
+  // background-color: rgb(152, 106, 227)
+.grafik
+  object-fit: cover
+  max-width: 804px
+  max-height: 554,57px
+  // position: absolute
+  // left: 0px
+  // right: 0px
+  // top: 0px
+  // bottom: 0px
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2)
+  border-radius: 30px
+
+.SMALLgrafik
+  position: absolute
+  max-width: 361px
+  max-height: 246.68px
+  right: 512px
+  top: 124px
+
+  box-shadow: 0px 19.2249px 53.4024px -16.0207px rgba(25, 42, 89, 0.2)
+  border-radius: 32.0414px
+
+.mainfeatures
+  width: 100%
+
+.mainfeaturesLIST
+  max-width: 1220px
+  box-sizing: border-box
+  padding: 0px 20px
+  margin: 0px auto
+
+.main
+  max-width: 1180px
+  display: flex
+  flex-direction: column
+  gap: 80px
+
+.mainTEXT
+  max-width: 1060px
+  width: 100%
+  margin: 0px auto
+  display: flex
+  flex-direction: column
+  gap: 30px
+
+  // background-color: rgb(95, 21, 213)
+
+.mf-text-1
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 700
+  font-size: 40px
+  line-height: 47px
+  text-align: center
+  color: #172755
+
+.mf-text-2
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 400
+  font-size: 18px
+  line-height: 150%
+  text-align: center
+  color: #8794BA
+
+.mainfeaturesICONS
+  display: flex
+  gap: 20px
+
+.icon
+  max-width: 380px
+  display: flex
+  flex-direction: column
+  gap: 26px
+
+.icon-svg
+  padding: 0px 160px
+  max-width: 60px
+
+.icon-text
+  display: flex
+  flex-direction: column
+  gap: 15px
+
+  h2
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 19px
+    text-align: center
+    color: #172755
+
+  p
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 140%
+    text-align: center
+    color: #8794BA
