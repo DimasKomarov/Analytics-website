@@ -30,16 +30,16 @@ body
   position: relative
   z-index: 1
 
-// .header
-//   width: 100%
+.header
+  width: 100%
 
 .menu-text-img
-  // max-width: 1220px
+  max-width: 1220px
   display: flex
-  margin-top: 50px
-  margin-left: 190px
-  // margin: 50px auto
-  margin-bottom: 96px
+  box-sizing: border-box
+  margin: 50px auto
+  padding: 0px 20px
+
   gap: 74px
   flex-direction: column
   // background-color: rgb(138, 76, 76)
@@ -58,8 +58,6 @@ body
   width: 100%
   // margin: 50px auto
   display: flex
-  box-sizing: border-box
-  padding: 0px 20px
   justify-content: space-between
 
   // background-color: rgb(11, 211, 230)
@@ -116,14 +114,13 @@ body
 .analytics-text-and-img
   display: flex
   gap: 149px
-  box-sizing: border-box
-  padding-left: 20px
   align-items: center
 
   // background-color: rgb(96, 5, 242)
 
 .analytics-text
   max-width: 550px
+  width: 100%
   max-height: 316px
   display: flex
   flex-direction: column
@@ -170,12 +167,14 @@ body
   color: #8794BA
 
 .GrafIMG
+  display: flex
+  max-width: 481px
   position: relative
   // background-color: rgb(152, 106, 227)
 .grafik
   object-fit: cover
   max-width: 804px
-  max-height: 554,57px
+  max-height: 100%
   // position: absolute
   // left: 0px
   // right: 0px
@@ -187,8 +186,7 @@ body
 .SMALLgrafik
   position: absolute
   max-width: 361px
-  max-height: 246.68px
-  right: 512px
+  right: 189px
   top: 124px
 
   box-shadow: 0px 19.2249px 53.4024px -16.0207px rgba(25, 42, 89, 0.2)

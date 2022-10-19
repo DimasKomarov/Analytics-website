@@ -35,11 +35,16 @@ body {
   z-index: 1;
 }
 
+.header {
+  width: 100%;
+}
+
 .menu-text-img {
+  max-width: 1220px;
   display: flex;
-  margin-top: 50px;
-  margin-left: 190px;
-  margin-bottom: 96px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 0px 20px;
   gap: 74px;
   flex-direction: column;
 }
@@ -59,8 +64,6 @@ body {
   max-width: 1220px;
   width: 100%;
   display: flex;
-  box-sizing: border-box;
-  padding: 0px 20px;
   justify-content: space-between;
 }
 
@@ -113,13 +116,12 @@ body {
 .analytics-text-and-img {
   display: flex;
   gap: 149px;
-  box-sizing: border-box;
-  padding-left: 20px;
   align-items: center;
 }
 
 .analytics-text {
   max-width: 550px;
+  width: 100%;
   max-height: 316px;
   display: flex;
   flex-direction: column;
@@ -166,6 +168,8 @@ body {
 }
 
 .GrafIMG {
+  display: flex;
+  max-width: 481px;
   position: relative;
 }
 
@@ -173,7 +177,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 804px;
-  max-height: 554, 57px;
+  max-height: 100%;
   box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
   border-radius: 30px;
 }
@@ -181,8 +185,7 @@ body {
 .SMALLgrafik {
   position: absolute;
   max-width: 361px;
-  max-height: 246.68px;
-  right: 512px;
+  right: 189px;
   top: 124px;
   box-shadow: 0px 19.2249px 53.4024px -16.0207px rgba(25, 42, 89, 0.2);
   border-radius: 32.0414px;
