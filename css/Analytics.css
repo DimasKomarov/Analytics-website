@@ -33,17 +33,17 @@ body {
   min-height: 100vh;
   position: relative;
   z-index: 1;
-}
-
-.header {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
 }
 
 .menu-text-img {
   max-width: 1220px;
   display: flex;
   box-sizing: border-box;
-  margin: 50px auto;
+  margin: 50px auto 90px;
   padding: 0px 20px;
   gap: 74px;
   flex-direction: column;
@@ -200,6 +200,9 @@ body {
   box-sizing: border-box;
   padding: 0px 20px;
   margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
 }
 
 .main {
@@ -277,4 +280,283 @@ body {
   line-height: 140%;
   text-align: center;
   color: #8794BA;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.feature1 {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.feature2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 100px;
+  align-items: center;
+}
+
+.fe-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.fe-text h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #172755;
+}
+.fe-text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #8794BA;
+}
+
+.fe-svg {
+  width: 600px;
+  height: 410px;
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  border-radius: 30px;
+}
+
+.footer-background {
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
+.fon2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  max-height: 1231px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  max-width: 1220px;
+  width: 100%;
+  display: flex;
+  margin: 285px auto 0px;
+  padding: 0px 20pxf;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.footer-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.footer-pricing-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer-pricing-text h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.footer-pricing-text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8794BA;
+}
+
+.pricing-plans {
+  display: flex;
+  gap: 80px;
+  height: 455px;
+  background-color: red;
+}
+
+.pricing-card {
+  display: flex;
+  max-height: 425px;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 60px 70px;
+  gap: 30px;
+  background: rgba(15, 31, 75, 0.7);
+  border-radius: 30px;
+}
+
+.title-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title-price h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.title-price p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8794BA;
+}
+
+.line {
+  width: 220px;
+  height: 1px;
+  background: #2A407C;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.price h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.price p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #8794BA;
+}
+
+.price-button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 80px;
+  gap: 10px;
+  border: 1px solid #2A407C;
+  border-radius: 68px;
+}
+.price-button p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.pricing-white-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 60px 70px;
+  gap: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 18px 50px -15px #060F28;
+  border-radius: 30px;
+}
+
+.title-white-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title-white-price h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #172755;
+}
+.title-white-price p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8794BA;
+}
+
+.line-white {
+  width: 220px;
+  height: 1px;
+  background: #D3D9E9;
+}
+
+.price-white {
+  display: flex;
+  flex-direction: column;
+}
+.price-white h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #172755;
+}
+.price-white p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #8794BA;
+}
+
+.price-white-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15.5px 83px;
+  gap: 10px;
+  background: #EF2A82;
+  border-radius: 68px;
+}
+.price-white-button p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=Analytics.css.map */
