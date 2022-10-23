@@ -56,7 +56,7 @@ body {
   z-index: -1;
   width: 100%;
   max-height: 815px;
-  height: 103vh;
+  height: 815px;
 }
 
 .menu {
@@ -340,7 +340,7 @@ body {
   left: 0;
   z-index: -1;
   width: 100%;
-  max-height: 1231px;
+  min-height: 1231px;
   height: 117vh;
 }
 
@@ -389,7 +389,6 @@ body {
 .pricing-plans {
   display: flex;
   gap: 80px;
-  height: 455px;
 }
 
 .pricing-card {
@@ -438,23 +437,37 @@ body {
   display: flex;
   flex-direction: column;
 }
-.price h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
-  text-align: center;
-  color: #FFFFFF;
-}
 .price p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 22px;
   text-align: center;
   color: #8794BA;
+}
+
+.price-h {
+  display: flex;
+}
+.price-h p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  vertical-align: sub;
+  line-height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.price-h span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  vertical-align: baseline;
+  font-size: 30px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .price-button {
@@ -521,23 +534,37 @@ body {
   display: flex;
   flex-direction: column;
 }
-.price-white h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
-  text-align: center;
-  color: #172755;
-}
 .price-white p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 22px;
   text-align: center;
   color: #8794BA;
+}
+
+.price-white-h {
+  display: flex;
+}
+.price-white-h p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  vertical-align: sub;
+  line-height: 70px;
+  text-align: center;
+  color: #172755;
+}
+.price-white-h span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  vertical-align: baseline;
+  font-size: 30px;
+  text-align: center;
+  color: #172755;
 }
 
 .price-white-button {
