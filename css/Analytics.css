@@ -653,4 +653,7 @@ body {
   .analytics-text-and-img {
     flex-direction: column-reverse;
   }
+  .menuBUTTONS {
+    display: none;
+  }
 }/*# sourceMappingURL=Analytics.css.map */
