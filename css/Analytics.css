@@ -732,4 +732,7 @@ body {
   .menuBUTTONS2 {
     gap: 20px;
   }
+  .pricing-plans {
+    overflow: scroll;
+  }
 }/*# sourceMappingURL=Analytics.css.map */
