@@ -111,6 +111,43 @@ body {
   border-radius: 68px;
 }
 
+.menuMobile {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  display: none;
+  justify-content: space-between;
+  background-color: #172755;
+  box-shadow: 0px 4px 4px #12214D;
+}
+
+.signIN_AND_button {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.signIN_AND_button p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #8794BA;
+}
+
+.menu_button {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.button-line {
+  width: 24px;
+  height: 3px;
+  background: #8794BA;
+}
+
 .analytics-text-and-img {
   display: flex;
   gap: 149px;
@@ -646,14 +683,53 @@ body {
 @media only screen and (max-width: 1158px) {
   .fon1 {
     height: 937px;
+    width: auto;
+  }
+  .fon2 {
+    height: 1231px;
+    width: auto;
+  }
+  .menu-text-img {
+    margin: 0px auto 90px;
+    padding: 0px;
+    gap: 30px;
+  }
+  .analytics-text-and-img {
+    flex-direction: column-reverse;
+    gap: 70px;
+    margin: 0px;
+  }
+  .analytics-text {
+    max-width: 774px;
+    box-sizing: border-box;
+    padding: 0px 23px;
+  }
+  .an-text-1 {
+    font-size: 57px;
+  }
+  .an-text-2 {
+    font-size: 20px;
+  }
+  .Try-for-free-button {
+    display: flex;
+    justify-content: center;
+  }
+  .GrafIMG {
+    max-width: 800px;
+  }
+  .grafik {
+    max-width: 580px;
   }
   .SMALLgrafik {
     display: none;
   }
-  .analytics-text-and-img {
-    flex-direction: column-reverse;
-  }
   .menu {
     display: none;
+  }
+  .menuMobile {
+    display: flex;
+  }
+  .menuBUTTONS2 {
+    gap: 20px;
   }
 }/*# sourceMappingURL=Analytics.css.map */
