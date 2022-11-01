@@ -137,9 +137,42 @@ body {
 }
 
 .menu_button {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 5px;
+}
+
+.menu_button_opened {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.button_opened {
+  transform: rotate(90deg);
+}
+
+.menuHidden {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  top: 47px;
+  background: #FFFFFF;
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  border-radius: 16px;
+}
+.menuHidden p {
+  padding: 16px 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #172755;
 }
 
 .button-line {
