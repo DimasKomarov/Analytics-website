@@ -137,18 +137,20 @@ body {
 }
 
 .menu_button {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.menu_button_opened {
   display: flex;
   flex-direction: column;
   position: relative;
+  gap: 5px;
 }
 
-.button_opened {
+.btn-menu {
+  background-color: #172755;
+  border: none;
+  text-decoration: none;
+}
+
+.active,
+.btn-menu:hover {
   transform: rotate(90deg);
 }
 

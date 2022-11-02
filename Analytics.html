@@ -19,6 +19,21 @@
 
     <link type="text/css" rel="stylesheet" href="./fonts/fonts.css">
     <link type="text/css" rel="stylesheet" href="./css/Analytics.css">
+
+    <script>
+        let btn = document.getElementsByClassName('btn-menu')
+        for(let i = 0; i < btn.length; i++) {
+            btn[i].addEventListener('click', function () {
+                this.classList.toggle('active')
+                let menuHidden = this.nextElementSibling;
+                if (menuHidden.style.maxHeight) {
+                    menuHidden.style.maxHeight = null
+                } else {
+                    menuHidden.style.maxHeight = menuHidden.scrollHeight + 'px'
+                }
+            })
+        }
+    </script>
 </head>
 
 <body>
@@ -59,10 +74,7 @@
                 <div class="signIN_AND_button">
                     <p>Sign in</p>
                     <div class="menu_button">
-                        <img src="./images/menu-icon.svg" alt="">
-                    </div>
-                    <div class="menu_button_opened">
-                        <img class="button_opened" src="./images/menu-icon.svg" alt="">
+                        <button class="btn-menu"><img src="./images/menu-icon.svg" alt=""></button>
                         <div class="menuHidden">
                             <p>Products</p>
                             <p>Pricing</p>
