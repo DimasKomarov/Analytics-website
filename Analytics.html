@@ -19,6 +19,7 @@
 
     <link type="text/css" rel="stylesheet" href="./fonts/fonts.css">
     <link type="text/css" rel="stylesheet" href="./css/Analytics.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -40,7 +41,7 @@
                         <p>Blog</p>
                     </div>
                 </div>
-                
+
                 <div class="signIN_AND_signUP">
                     <a>Sign in</a>
                     <button>
@@ -217,67 +218,90 @@
                             volutpat pellentesque volutpat est. </p>
                     </div>
 
-                    <div class="pricing-plans">
-                        <div class="pricing-card">
-                            <div class="title-price">
-                                <h2>Starter</h2>
-                                <p>up to 3 users</p>
-                            </div>
-                            <div class="line"></div>
-                            <div class="price">
-                                <div class="price-h">
-                                    <p>
-                                        <span>$</span>29
-                                    </p>
+                    <div class="swiper mySwiper">
+                        <div class="pricing-plans swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="pricing-card">
+                                    <div class="title-price">
+                                        <h2>Starter</h2>
+                                        <p>up to 3 users</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="price">
+                                        <div class="price-h">
+                                            <p>
+                                                <span>$</span>29
+                                            </p>
+                                        </div>
+                                        <p>per month</p>
+                                    </div>
+                                    <div class="price-button">
+                                        <p>Order</p>
+                                    </div>
                                 </div>
-                                <p>per month</p>
                             </div>
-                            <div class="price-button">
-                                <p>Order</p>
-                            </div>
-                        </div>
 
-
-                        <div class="pricing-white-card">
-                            <div class="title-white-price">
-                                <h2>Standard</h2>
-                                <p>up to 20 users</p>
-                            </div>
-                            <div class="line-white"></div>
-                            <div class="price-white">
-                                <div class="price-white-h">
-                                    <p>
-                                        <span>$</span>99
-                                    </p>
+                            <div class="swiper-slide">
+                                <div class="pricing-white-card">
+                                    <div class="title-white-price">
+                                        <h2>Standard</h2>
+                                        <p>up to 20 users</p>
+                                    </div>
+                                    <div class="line-white"></div>
+                                    <div class="price-white">
+                                        <div class="price-white-h">
+                                            <p>
+                                                <span>$</span>99
+                                            </p>
+                                        </div>
+                                        <p>per month</p>
+                                    </div>
+                                    <div class="price-white-button">
+                                        <p>Order</p>
+                                    </div>
                                 </div>
-                                <p>per month</p>
                             </div>
-                            <div class="price-white-button">
-                                <p>Order</p>
-                            </div>
-                        </div>
 
 
 
-                        <div class="pricing-card">
-                            <div class="title-price">
-                                <h2>Starter</h2>
-                                <p>up to 3 users</p>
-                            </div>
-                            <div class="line"></div>
-                            <div class="price">
-                                <div class="price-h">
-                                    <p>
-                                        <span>$</span>2999
-                                    </p>
+                            <div class="swiper-slide">
+                                <div class="pricing-card">
+                                    <div class="title-price">
+                                        <h2>Starter</h2>
+                                        <p>up to 3 users</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="price">
+                                        <div class="price-h">
+                                            <p>
+                                                <span>$</span>2999
+                                            </p>
+                                        </div>
+                                        <p>per month</p>
+                                    </div>
+                                    <div class="price-button">
+                                        <p>Order</p>
+                                    </div>
                                 </div>
-                                <p>per month</p>
                             </div>
-                            <div class="price-button">
-                                <p>Order</p>
-                            </div>
+
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
+
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
                 </div>
 
                 <div class="footer-links">
