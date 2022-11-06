@@ -19,21 +19,6 @@
 
     <link type="text/css" rel="stylesheet" href="./fonts/fonts.css">
     <link type="text/css" rel="stylesheet" href="./css/Analytics.css">
-
-    <script>
-        let btn = document.getElementsByClassName('btn-menu')
-        for(let i = 0; i < btn.length; i++) {
-            btn[i].addEventListener('click', function () {
-                this.classList.toggle('active')
-                let menuHidden = this.nextElementSibling;
-                if (menuHidden.style.maxHeight) {
-                    menuHidden.style.maxHeight = null
-                } else {
-                    menuHidden.style.maxHeight = menuHidden.scrollHeight + 'px'
-                }
-            })
-        }
-    </script>
 </head>
 
 <body>
@@ -47,9 +32,7 @@
         <div class="menu-text-img">
             <div class="menu">
                 <div class="logoANDbuttons">
-
-                    <img class="logoSVG" src="./images/logo.svg" alt="">
-
+                    <a href=""><img class="logoSVG" src="./images/logo.svg" alt=""></a>
                     <div class="menuBUTTONS">
                         <p>Products</p>
                         <p>Pricing</p>
@@ -57,22 +40,22 @@
                         <p>Blog</p>
                     </div>
                 </div>
-
+                
                 <div class="signIN_AND_signUP">
-                    <p>Sign in</p>
+                    <a>Sign in</a>
                     <button>
-                        <p>Sign Up</p>
+                        <a>Sign Up</a>
                     </button>
                 </div>
             </div>
 
             <div class="menuMobile">
                 <div class="logoANDbuttons">
-                    <img class="logoSVG" src="./images/logo.svg" alt="">
+                    <a href=""><img class="logoSVG" src="./images/logo.svg" alt=""></a>
                 </div>
 
                 <div class="signIN_AND_button">
-                    <p>Sign in</p>
+                    <a>Sign in</a>
                     <div class="menu_button">
                         <button class="btn-menu"><img src="./images/menu-icon.svg" alt=""></button>
                         <div class="menuHidden">
@@ -83,6 +66,14 @@
                         </div>
                     </div>
                 </div>
+                <script>
+                    const but = document.querySelector(".btn-menu");
+                    const menu = document.querySelector(".menuHidden");
+                    but.addEventListener("click", () => {
+                        but.classList.toggle("btn-menu-rotate")
+                        menu.classList.toggle("menuVisible")
+                    });
+                </script>
             </div>
 
             <div class="analytics-text-and-img">

@@ -93,7 +93,7 @@ body {
   gap: 40px;
   align-items: center;
 }
-.signIN_AND_signUP p {
+.signIN_AND_signUP a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -126,7 +126,7 @@ body {
   gap: 18px;
   align-items: center;
 }
-.signIN_AND_button p {
+.signIN_AND_button a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -147,15 +147,16 @@ body {
   background-color: #172755;
   border: none;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .active,
-.btn-menu:hover {
+.btn-menu-rotate {
   transform: rotate(90deg);
 }
 
 .menuHidden {
-  display: flex;
+  display: none;
   z-index: 1;
   flex-direction: column;
   align-items: center;
@@ -166,6 +167,7 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
   border-radius: 16px;
+  transition: 0.3s;
 }
 .menuHidden p {
   padding: 16px 20px;
@@ -177,6 +179,34 @@ body {
   color: #172755;
 }
 
+.menuVisible {
+  display: flex;
+  opacity: 0;
+  -webkit-animation: visible 0.3s ease-in forwards;
+          animation: visible 0.3s ease-in forwards;
+}
+
+@-webkit-keyframes visible {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .button-line {
   width: 24px;
   height: 3px;
