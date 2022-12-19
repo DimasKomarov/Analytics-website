@@ -928,6 +928,18 @@ body {
   .fb-tw-in {
     gap: 40px;
   }
+  .pricing-white-card {
+    width: 150px;
+    max-height: 358px;
+    gap: 30px;
+  }
+  .price-white-button {
+    padding: 10px 83px;
+  }
+  .pricing-card {
+    width: 150px;
+    max-height: 358px;
+  }
 }
 .swiper {
   width: 100%;
