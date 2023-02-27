@@ -150,7 +150,6 @@ body {
   transition: 0.3s;
 }
 
-.active,
 .btn-menu-rotate {
   transform: rotate(90deg);
 }
@@ -167,7 +166,6 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
   border-radius: 16px;
-  transition: 0.3s;
 }
 .menuHidden p {
   padding: 16px 20px;
@@ -182,17 +180,7 @@ body {
 .menuVisible {
   display: flex;
   opacity: 0;
-  -webkit-animation: visible 0.3s ease-in forwards;
-          animation: visible 0.3s ease-in forwards;
-}
-
-@-webkit-keyframes visible {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: visible 0.3s ease-in forwards;
 }
 
 @keyframes visible {
@@ -485,9 +473,12 @@ body {
 .pricing-card {
   display: flex;
   max-height: 425px;
+  max-width: 340px;
   flex-direction: column;
   align-items: center;
   padding: 50px 60px 70px;
+  box-sizing: border-box;
+  margin: 0px auto;
   gap: 30px;
   background: rgba(15, 31, 75, 0.7);
   border-radius: 30px;
@@ -581,9 +572,12 @@ body {
 
 .pricing-white-card {
   display: flex;
+  max-width: 340px;
   flex-direction: column;
   align-items: center;
   padding: 50px 60px 70px;
+  margin: 0px auto;
+  box-sizing: border-box;
   gap: 40px;
   background: #FFFFFF;
   box-shadow: 0px 18px 50px -15px #060F28;
@@ -803,6 +797,12 @@ body {
   .fon1 {
     height: 815px;
   }
+  .pricing-white-card {
+    padding: 25px 60px 25px;
+  }
+  .pricing-card {
+    padding: 25px 60px 25px;
+  }
   .fon2 {
     height: 1079px;
   }
@@ -916,7 +916,7 @@ body {
     text-align: left;
   }
   .footer-pricing {
-    gap: 42px;
+    gap: 59px;
   }
   .footer-links {
     margin-top: 44px;
@@ -929,16 +929,16 @@ body {
     gap: 40px;
   }
   .pricing-white-card {
-    width: 150px;
     max-height: 358px;
+    max-width: 280px;
     gap: 30px;
   }
   .price-white-button {
     padding: 10px 83px;
   }
   .pricing-card {
-    width: 150px;
     max-height: 358px;
+    max-width: 280px;
   }
 }
 .swiper {
